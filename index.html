@@ -4,16 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Medical Landing Page</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- JavaScript -->
     <script src="script.js" defer></script>
   </head>
   <body>
+    <!-- =================== START NAVBAR =================== -->
     <header class="site-header">
       <div class="nav-container">
         <a href="#" class="logo">E-<span>sheba</span></a>
 
         <button class="nav-toggle" aria-label="Toggle navigation">
-          <span class="hamburger"></span>
+          <i
+            class="fa-solid fa-bars fa-xl"
+            id="bars"
+            style="color: #0360d9"
+          ></i>
+          <i
+            class="hidden fa-solid fa-xmark fa-xl"
+            id="close"
+            style="color: #ff0000"
+          ></i>
         </button>
 
         <nav class="nav" id="main-nav">
@@ -31,9 +56,70 @@
         </div>
       </div>
     </header>
+    <!-- =================== END NAVBAR =================== -->
 
     <main>
       <!-- Page content goes here -->
     </main>
+
+    <!-- =================== START FOOTER =================== -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3 class="footer-logo">E-sheba</h3>
+          <p class="footer-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec risus
+            feugiat lectus risus sed ullamcorper. Auctor semper fermentum
+          </p>
+          <p class="footer-text">
+            volutpat integer vel. In rhoncus elementum nunc, malesuada mi sed.
+            Nibh et sit lobortis et semper.
+          </p>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f fa-lg"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram fa-lg"></i
+            ></a>
+            <a href="#" aria-label="Twitter"
+              ><i class="fab fa-twitter fa-lg"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4 class="footer-heading">Useful Links</h4>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Our Mission</a></li>
+            <li><a href="#">Our Team</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4 class="footer-heading">Address</h4>
+          <div class="footer-map">
+            <!-- <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d215505.5!2d34.2251578!3d31.409211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s"
+              width="100%"
+              height="200"
+              style="border: 0; border-radius: 8px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe> -->
+            <img src="./assets/address.png" alt="location address" />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="copyright"></span> All Right Reserved</p>
+      </div>
+    </footer>
+    <!-- =================== END FOOTER =================== -->
   </body>
 </html>
