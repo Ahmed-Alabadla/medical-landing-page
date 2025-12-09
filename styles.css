@@ -345,6 +345,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .stat-item:last-child {
@@ -371,16 +372,28 @@ body {
   background: white;
   margin: 0 40px;
 }
+@media (max-width: 1024px) {
+  .hero-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .hero-image img {
+    transform: scale(1.6) translate(50%, -18.7%);
+    -webkit-transform: scale(1.6) translate(50%, -18.7%);
+    -moz-transform: scale(1.6) translate(50%, -18.7%);
+    -ms-transform: scale(1.6) translate(50%, -18.7%);
+    -o-transform: scale(1.6) translate(50%, -18.7%);
+  }
+  .half-circle-shape {
+    display: none;
+  }
+}
 
 /* Responsive */
 @media (max-width: 900px) {
   .hero {
     min-height: auto;
     padding-bottom: 80px;
-  }
-  .hero-container {
-    flex-direction: column;
-    gap: 40px;
   }
 
   .stat-number {
@@ -397,14 +410,23 @@ body {
     font-size: 36px;
   }
 
-  .hero-image {
-    /* justify-content: center; */
-    display: none;
+  .hero-stats-content {
+    justify-content: center;
   }
 
-  .half-circle-shape {
-    width: 400px;
-    height: 220px;
+  .hero-image {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .hero-image img {
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -o-transform: scale(1.4);
   }
 
   .stat-number {
@@ -429,19 +451,17 @@ body {
     font-size: 32px;
   }
 
-  .hero-image img {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
+  .hero-image {
+    position: relative;
+    max-width: 400px;
   }
 
-  .half-circle-shape {
-    width: 420px;
-    height: 300px;
-    clip-path: circle(57% at 50% 102%);
-    transform: translateX(-12%);
+  .hero-image img {
+    transform: scale(1.1) translateY(-4.5%);
+    -webkit-transform: scale(1.1) translateY(-4.5%);
+    -moz-transform: scale(1.1) translateY(-4.5%);
+    -ms-transform: scale(1.1) translateY(-4.5%);
+    -o-transform: scale(1.1) translateY(-4.5%);
   }
 
   .hero-stats {
