@@ -191,7 +191,7 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 60px;
-  align-items: end;
+  align-items: center;
   position: relative;
 }
 
@@ -242,6 +242,7 @@ body {
   max-width: 500px;
   position: relative;
   z-index: 2;
+  margin-bottom: 40px;
 }
 
 .search-input {
@@ -373,11 +374,21 @@ body {
 
 /* Responsive */
 @media (max-width: 900px) {
+  .hero {
+    min-height: auto;
+    padding-bottom: 80px;
+  }
   .hero-container {
     flex-direction: column;
     gap: 40px;
   }
 
+  .stat-number {
+    font-size: 48px;
+  }
+  .separator {
+    margin: 0 10px;
+  }
   .hero-content {
     padding-right: 0;
   }
@@ -387,7 +398,8 @@ body {
   }
 
   .hero-image {
-    justify-content: center;
+    /* justify-content: center; */
+    display: none;
   }
 
   .half-circle-shape {
